@@ -177,6 +177,7 @@ body {
 }
 
 .link-login {
+    cursor: pointer;
     background-color: transparent;
     color: #00C9FF;
     font-size: 0.9em;
@@ -294,6 +295,8 @@ body {
 
 .upper-left div h3 {
     font-size: 1em;
+    cursor: pointer;
+    color: #2f2f2f;
 }
 
 .upper-left div h5 {
@@ -336,6 +339,12 @@ body {
 
 
 
+
+.menu-dots i {
+    cursor: pointer;
+}
+
+
 /* COL 2 */
 
 .cerrar-sesion {
@@ -351,6 +360,7 @@ body {
 }
 
 .profile {
+    padding: 5em 3em 0 3em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -389,7 +399,7 @@ body {
 }
 
 .estadisticas {
-    width: 100%;
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 2em;
@@ -406,13 +416,14 @@ body {
 }
 
 .descrip-profile {
+    text-align: center;
     width: 100%;
     margin-top: 2em;
     padding: 0 1em;
 }
 
 .descrip-profile h3 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .descrip-profile p {
@@ -422,7 +433,7 @@ body {
 }
 
 .descrip-profile a {
-    color: #FE9800;
+    color: #00C9FF;
     font-size: 0.9em;
 }
 
@@ -515,18 +526,246 @@ body {
 }
 
 
+
+/* DETAIL */
+
+.content-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+.inner-card {
+    margin: 0 auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.header-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-detail {
+    display: flex;
+    align-items: center;
+}
+
+.user-detail img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 1em;
+}
+
+.user-detail div h3 {
+    font-size: 1.2em;
+}
+
+.user-detail div h4 {
+    font-size: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.info-user-detail {
+    display: flex;
+    align-items: center;
+}
+
+.info-user-detail p {
+    color: #696b6d;
+    font-size: 0.9em;
+}
+
+.like-button div {
+    cursor: pointer;
+    border: 1px solid #00C9FF;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: #00C9FF;
+}
+
+.content-paragraph p {
+    margin-top: 1em;
+}
+
+.content-back-link {
+    width: 45%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.back-link {
+    border: 1px solid #a3a6a7;
+    border-radius: 4px;
+    padding: 1em 1.4em;
+
+}
+
+.back-link i {
+    color: #a3a6a7;
+    font-size: 1em;
+}
+
+.comments-section {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.comments-section form {
+    width: 35%;
+}
+
+
+.comments-section form textarea{
+    width: 100%;
+    background-color: transparent;
+    padding: 1em 20px;
+    box-sizing: border-box;
+    border: 1px solid #9aa5a0;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #454747;
+    margin-bottom: 0.7em;
+}
+
+.comments-section form input[type="text"]::-webkit-input-placeholder {
+    color: #9aa5a0;
+    font-size: 0.9em;
+}
+
+
+.comments-section form button {
+    width: 100%;
+    padding: 0.8em 0;
+    margin-top: 0.3em;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #00C9FF;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #00C9FF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.comments-section form button:hover {
+    background-color: #0ab8e9;
+    border: 1px solid #0ab8e9;
+}
+
+
+.comments-card {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.comments-card p {
+    margin-top: 1em;
+    color: #696b6d;
+}
+
+.user-card {
+    display: flex;
+    margin-top: 2em;
+}
+
+.user-card img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 1em;
+
+}
+
+.user-card div h3 {
+    font-size: .9em;
+    cursor: pointer;
+}
+
+.user-card div h5 {
+    color: #BEBDC0;
+    font-size: 0.8em;
+}
+
+
+
+
+.menu-user {
+    position: absolute;
+    right: 3em;
+    top: 4.2em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 1.4em 2em;
+    z-index: 9;
+}
+
+.menu-user a {
+    margin-bottom: 1em;
+    color: #2f2f2f;
+}
+
+.menu-user a:hover {
+    color: #00C9FF;
+}
+
+
+.menu-user span {
+    color: #2f2f2f;
+    cursor: pointer;
+}
+
+.menu-user span:hover {
+    color: #00C9FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* LOGIN / REGISTRO */
 
 .content-login {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 200px);
     display: flex;
 }
 
 .left-login {
     flex: 1;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 200px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,16 +773,38 @@ body {
 }
 
 .logo svg {
-    transform: scale(1.2);
+    transform: scale(2);
+}
+
+
+.cambio-form {
+    width: 25%;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.cambio-form h2 {
+    color: #a9b9b9;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.cambio-form h2.selected {
+    color: #526463;
+    border-bottom: 4px solid #00C9FF;
 }
 
 .left-login h3 {
     margin: 1em 0 2em 0;
+    color: #526463;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 
 .left-login form {
-    width: 60%;
+    width: 25%;
     display: flex;
     flex-direction: column;
 }
@@ -615,21 +876,22 @@ body {
 
 .left-login form button {
     width: 100%;
-    padding: 1.2em 0;
+    padding: 1em 0;
     margin-top: 0.3em;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    background-color: #FE9800;
-    font-weight: 700;
-    border: 1px solid #FE9800;
+    background-color: #00C9FF;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #00C9FF;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
 
 .left-login form button:hover {
-    background-color: #da860a;
-    border: 1px solid #da860a;
+    background-color: #0ab8e9;
+    border: 1px solid #0ab8e9;
 }
 
 .left-login .cambio-formulario {
@@ -806,6 +1068,40 @@ body {
 .mostrar-profile-responsive i {
     cursor: pointer;
     color: #FF8008;
+}
+
+
+
+.footer-main {
+    width: 100%;
+}
+
+.content-footer {
+    width: 100%;
+    height: 100px;
+    padding: 0 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.content-footer a svg path {
+    fill: #A5ADAD;
+}
+
+.menu-card {
+    position: absolute;
+    height: 60px;
+    width: 50%;
+    top: 65px;
+    right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 29px 0 rgba(100,100,111,.2);
 }
 
 
