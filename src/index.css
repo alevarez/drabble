@@ -399,7 +399,7 @@ body {
     justify-content: center;
     margin-bottom: 1em;
     padding: 1em 0;
-    border: 3px dashed;
+    border: 2px dashed;
     border-color: #9aa5a0;
 }
 
@@ -1068,7 +1068,7 @@ body {
     justify-content: center;
     margin-bottom: 1em;
     padding: 1em 0;
-    border: 3px dashed;
+    border: 2px dashed;
     border-color: #9aa5a0;
 }
 
@@ -1276,6 +1276,10 @@ body {
     .comments-card {
         width: 55%;
     }
+
+    .left-login form {
+        width: 40%;
+    }
 }
 
 @media (max-width: 1130px) {
@@ -1355,6 +1359,10 @@ body {
     .comments-card {
         width: 80%;
     }
+
+    .cambio-form {
+        width: 45%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1403,6 +1411,10 @@ body {
 
     .content-footer p {
         margin-bottom: 1em;
+    }
+
+    .left-login form {
+        width: 55%;
     }
 }
 
@@ -1463,6 +1475,10 @@ body {
         padding: 0.3em 0.7em;
         font-size: 0.8em;
     }
+
+    .cambio-form {
+        width: 85%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1476,6 +1492,10 @@ body {
 
     .main-nav a svg {
         transform: scale(0.9);
+    }
+
+    .logo svg {
+        transform: scale(1.5);
     }
 }
 
