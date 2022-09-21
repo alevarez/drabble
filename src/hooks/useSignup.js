@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 import {auth} from '../firebase/config'
-import {createUserWithEmailAndPassword} from 'firebase/auth'
+import {createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
 
 import {useAuthContext} from './useAuthContext'
 
@@ -15,6 +15,11 @@ export const useSignup = () => {
 
         createUserWithEmailAndPassword(auth ,email, password)
             .then(res => {
+                if (res.user) {
+                    updateProfile(res.user, {displayName: displayName})
+                        .then(user => console.log(user))
+                        .catch(e => console.log(e))
+                }
                 dispatch({type: 'LOGIN', payload: res.user})
             })
             .catch(err => {

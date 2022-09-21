@@ -23,7 +23,7 @@ export const Navbar = () => {
         {!user && <Link to="/login" className="link-login">Login</Link>}
         {user && (
           <>
-            <div onClick={() => setShowMenu(prevShow => !prevShow)} className="link-login"><span style={{marginRight: '10px'}}>matildeV</span><i className="fas fa-chevron-down"></i></div>
+            <div onClick={() => setShowMenu(prevShow => !prevShow)} className="link-login"><span style={{marginRight: '10px'}}>{user.displayName}</span><i className="fas fa-chevron-down"></i></div>
             {showMenu && (
               <motion.div initial={{opacity: 0}} animate={{opacity: 1}} className="menu-user">
                 <Link to="/create">Subir ilustración</Link>
